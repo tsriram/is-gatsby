@@ -4,13 +4,22 @@ rm -rf dist
 # create dist
 mkdir dist
 
-# build for Chrome
-cd shells/chrome
-zip ../../dist/chrome.zip manifest.json ../../js/* ../../icons/*
+# copy common files
+cp -R js/ dist
+cp -R icons/ dist
 
-# go back to root directory
-cd -
+# build for Chrome
+cp shells/chrome/manifest.json dist/
+cd dist
+zip chrome.zip manifest.json js/* icons/*
+
+# delete chrome's manifest and copy firefox's
+rm -f manifest.json
+cp ../shells/firefox/manifest.json .
 
 # build for Firefox
-cd shells/firefox
-zip ../../dist/firefox.zip manifest.json ../../js/* ../../icons/*
+zip firefox.zip manifest.json js/* icons/*
+
+# delete copied files
+rm -rf js/ icons/
+rm -f manifest.json
