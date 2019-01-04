@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Is Gatsby?",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Tell if a page is built using Gatsby",
   "homepage_url": "https://github.com/tsriram/is-gatsby",
 
