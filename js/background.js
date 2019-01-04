@@ -11,7 +11,7 @@ c.runtime.onMessage.addListener(function(request, sender) {
     });
   } else {
     c.pageAction.hide(tabId);
-    c.pageAction.setIcon({ tabId, path: "icons/icon-gray32.png" });
+    c.pageAction.setIcon({ tabId, path: "icons/icon32-gray.png" });
     c.pageAction.setTitle({
       tabId,
       title: "This page doesn't appear to be built with Gatsby :("

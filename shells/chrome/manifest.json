@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Is Gatsby?",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Tell if a page is built using Gatsby",
   "homepage_url": "https://github.com/tsriram/is-gatsby",
 
@@ -17,7 +17,7 @@
   "permissions": ["file:///*", "http://*/*", "https://*/*"],
 
   "page_action": {
-    "default_icon": "icons/icon32.png",
+    "default_icon": "icons/icon32-gray.png",
     "default_title": "This page doesn't appear to be built with Gatsby :("
   },
 
