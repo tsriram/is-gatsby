@@ -17,7 +17,7 @@
   "permissions": ["file:///*", "http://*/*", "https://*/*"],
 
   "page_action": {
-    "default_icon": "icons/icon32.png",
+    "default_icon": "icons/icon32-gray.png",
     "default_title": "This page doesn't appear to be built with Gatsby :("
   },
 
